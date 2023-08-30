@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello world pointers!\n");
+    int i = 15; //varibale entière => allocation statiqu ed'une mémoire de 4 bytes = soizaeof(int)
+    printf("i = %d (sizeof(int)=%d bytes)\n", i,sizeof(i));
+    i = 27;
+    printf("new i = %d (at the %p () <=> 0x%x <=>0x%X position in memory (=>address ot pointer)\n",
+              i, &i, &i, &i, &i);
+
+    int j = i; //nouvelle variable initialisée �  la valuer de i
+    printf("j = %d (at the %p position in memory\n",j, &j);
+    j++;
+    printf("new j = %d i reamins %d = \n",j, i);
+
+    int *p =0; //variable d'adresse initialisée �  l'adresse 0;
+    p = &i;
+    printf("1.pointer p = %p (it is the address) its content = %d\n",p,*p);
+    i--;
+    printf("2.pointer p = %p (it is the address) its content = %d\n",p,*p);
+
+    p = &j;
+    printf("3.pointer p = %p (it is the address) its content = %d\n",p,*p);
+
+    printf("p has its own address to represent diffrent addresses =>%p\n",&p);
+
+    printf("*&i = %d ",*&i);
+    printf("*p =%d\n",*p);
+
+    //anti pattern
+    int x,y,z;
+    int*  pp,qq,tt; //pp is a pointer on int
+    printf("sizeof(pp)=%d,sizeof(qq)=%d,sizeof(tt)=%d\n",
+           sizeof(pp),sizeof(qq),sizeof(tt));
+    int *hh = i;
+    printf("i=%d \n",i);
+    printf("i=%d, *hh =%d\n",i,*hh);
+
+    return 0;
+}

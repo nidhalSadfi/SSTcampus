@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+void displayBinary(int val){
+   char strInt[32];
+   int i;
+   for (i = 0; val != 0 ; i ++){
+     char b =  val % 2;
+     strInt[i]='0'+b;
+     val = val / 2;
+   }
+   strInt[i] = 0;//mark the end of the string !
+   printf("%s\n",strrev(strInt));
+}
+
+
+int main()
+{
+    printf("Hello numeric!\n");
+    int a = 100;
+    int b = -100;
+
+    int c = 07356;
+
+    int d = 0x75bC89F;
+    int e = 0b01010;
+
+
+    printf("interpre variables as decimals: a=%d, b=%d, c=%d, d=%d, e=%d \n",a,b,c,d,e);
+    printf("interpre variables as Hexa: a=0x%x, b=0x%x, c=0x%x, d=0x%x, e=0x%x\n",a,b,c,d,e);
+
+    printf("a = ");
+    displayBinary(a);
+    printf("e = ");
+    displayBinary(e);
+    return 0;
+}

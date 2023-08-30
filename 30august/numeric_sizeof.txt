@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello float world!\n");
+
+    int i = 141;
+    float f = 3.148975;
+    if (i == 141)
+        printf("i(%d) equals to 140\n",i);
+    else
+        printf("Not equal !\n");
+    if (f == 3.14)
+        printf("f(%f) equals to 3.14\n",f);
+    else
+        printf("f(%f) Not equal to 3.14!\n",f);
+
+    if ((f <= 3.14899)&& (f >= 3.1399))
+        printf("f(%f) equals to 3.14\n",f);
+    else
+        printf("f(%f) Not equal to 3.14!\n",f);
+
+    int ik = i / 2; //division entière: i : int , 2 int
+    printf("ik = i / 2 =>%f\n",(float)ik);
+
+
+    float fk = i / 2; //division entière: i : int , 2 int
+    printf("fk = i / 2 =>%f\n",fk);
+
+    float ffk = i / 2.0f; //division entière: i : int , 2.0 float
+    printf("ffk = i / 2.0 =>%f\n",ffk);
+
+    printf("sizeof(int)=%d, sizeof(float)=%d,",sizeof(i),sizeof(fk));
+    long ld;
+    printf(" sizeof(long)=%d\n",sizeof(ld));
+    double db;
+    printf(" sizeof(double)=%d\n",sizeof(db));
+    short sd = 1555;
+    printf(" sizeof(short)=%d\n",sizeof(sd));
+
+    char cd = 110;
+    cd ++;
+    cd = cd +10;
+    printf(" cd=%d,sizeof(char)=%d\n",cd, sizeof(cd));
+
+    unsigned char ucd = 150;
+    ucd ++;
+    ucd = ucd +20;
+    printf(" cd=%u,sizeof(unsigfned char)=%d\n",ucd, sizeof(ucd));
+
+    return 0;
+}
