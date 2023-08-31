@@ -4,7 +4,7 @@
 int main()
 {
     printf("\aHello \"Tunisia\" \\African\\ world !\\n=>\n");
-    printf("Hello \t Tunisia \t\t African world !\n");
+    printf("Hello\t Tunisia \t\t African world !\n");
 
     char chaine[80] = "SST Campus Megrine\0\n-01234";
     printf("chaine ==>%s  \n",chaine);
