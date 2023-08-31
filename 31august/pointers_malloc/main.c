@@ -19,16 +19,27 @@ int main() {
     printf("[2. address of pi = %p]\n",pi);
     printf("now the content of *pi = %d\n",*pi);
     free(pi);
+    pi = NULL;
+
     printf("[3. address of pi = %p]\n",pi);
-    //*pi= 17 !!!!!!Plantage
+    //*pi= 17; //!!!!!!Plantage
 
     int * px = malloc(sizeof(int));
+    *px = 89;
+    printf("now the content of [px=%p] *px = %d\n",px, *px);
 
     pi = malloc(sizeof(int));
+    if (pi == NULL){
+        printf("mallos returns NULL pointer=> no remain memory !!!");
+        exit(1);
+    }
+
     printf("[4. address of pi = %p]\n",pi);
     *pi = 17;
     printf("now the content of *pi = %d\n",*pi);
     free(pi);
+    pi = NULL;
 
     free(px);
+    px = NULL;
 }
