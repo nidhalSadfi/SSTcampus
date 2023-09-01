@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1693564584 source:c:\users\sst_campus\desktop\daily_projcets\sstcampus\31august\eval_expression_bool\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
