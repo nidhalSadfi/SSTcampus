@@ -24,7 +24,7 @@ int main() {
     printf("_opt = %d\n",_opt);
     printf("1. %s comptant on stOpt\n",_opt&COMPTANT?"Par":"Sans");
     printf("1. %s crédit on stOpt\n",_opt&CREDIT?"Par":"Sans");
-
+    printf("=========================================\n");
 
     toptions stOpt;
     stOpt.comptant = 1;
@@ -33,18 +33,21 @@ int main() {
     stOpt.credit = 0;
     stOpt.nonpaye = 0;
     stOpt.m6 =stOpt.m7 =stOpt.m8 = 0;
+    printf("2. %s comptant on pOpt\n",stOpt.comptant?"Par":"Sans");
+    printf("2. %s cheque on pOpt\n",stOpt.cheque?"Par":"Sans");
+    printf("2. %s credit on pOpt\n",stOpt.credit?"Par":"Sans");
 
     unsigned char *modepayment=(unsigned char*)&stOpt;
-    printf("_opt = %d\n",*modepayment); //save on database !!!the value 14 !
+    printf("==>save _opt = %d\n",*modepayment); //save on database !!!the value 14 !
 ///
 
 
 ///
 //in order to retreive thje payemeny mode !!
     unsigned char readOpt = *modepayment;
-    printf("_opt = %d\n",readOpt); //read from database !!!the value 14 !
+    printf("\n==> Retreive _opt = %d\n",readOpt); //read from database !!!the value 14 !
 
-    toptions *pOpt = (toptions*)&stOpt;
+    toptions *pOpt = (toptions*)&readOpt;
 
     printf("2. %s comptant on pOpt\n",pOpt->comptant?"Par":"Sans");
     printf("2. %s cheque on pOpt\n",pOpt->cheque?"Par":"Sans");
