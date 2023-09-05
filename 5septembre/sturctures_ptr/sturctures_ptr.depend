@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1693927614 source:c:\users\sst_campus\desktop\daily_projcets\sstcampus\5septembre\sturctures_ptr\main.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+
