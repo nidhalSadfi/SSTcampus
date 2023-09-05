@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1693913611 source:c:\users\sst_campus\desktop\daily_projcets\sstcampus\5septembre\assertion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+
