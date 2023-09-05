@@ -9,7 +9,7 @@ typedef struct {
 } MY_STRUCTURE;
 
 struct sVector{
-   int x;
+   short x;
    int y;
    int z;
 } ;
@@ -31,10 +31,21 @@ int main() {
     printf("v2=(%d,%d,%d)\n",v2.x,v2.y,v2.z);
 
     printf("&v2=0x%x, v4=0x%x\n", &v2, v4);
+    printf("&v2.x=0x%x, &v2.y=0x%x, &v2.z=0x%x\n", &v2.x, &v2.y,&v2.z);
 
     assert((&v2)->x == v4->x);
     assert(v2.y == v4->y);
     assert(v2.z == (*v4).z);
+    //assert((&v2)->x == v4->x && v2.z == (*v4).z && v2.z == (*v4).z);
 
+    struct sVector *v5 = malloc(sizeof(struct sVector));
+    printf("&v5=0x%x\n", &v5);
+    printf("v5=0x%x\n", v5);
+    memset(v5,0, sizeof(struct sVector));
+    printf("v5=(%d,%d,%d)\n",v5->x,v5->y,v5->z);
+    *v5 = v2;
+    printf("v5=(%d,%d,%d)\n",v5->x,v5->y,v5->z);
+
+    free(v5);
     return 0;
 }
