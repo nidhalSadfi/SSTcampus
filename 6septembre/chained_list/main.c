@@ -9,11 +9,6 @@ struct lnode{
    int value;
    struct lnode *next;
 };
-
-
-
-
-
 int main()
 {
     printf("Hello world!\n");
