@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//by mayssa
 typedef unsigned int UINT; //delay the definition of the type at he end $$$
 
 //Chained list
