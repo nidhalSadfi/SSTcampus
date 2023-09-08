@@ -8,29 +8,27 @@ int assign(int*p,int v){
     *p = v;
     return *p;
 }
-void permute(int *x, int *y){
-    //int v = *x;
+
+//algo génrique !!
+template <typename T>
+void permute(T *x, T *y){
+    //T v = *x;
     *x = *y + *x - (*y = *x);
     //*y = v;
 }
-int mysrtln(char c[]){
+/*void permutechar(char *x, char *y){
+    //int v = *x;
+    *x = *y + *x - (*y = *x);
+    //*y = v;
+}*/
 
-
-    return x;
-}
 void myreverse(char str[]){
-    int i, len, temp;
-    len = mysrtln(str);
-
-    for (i = 0; i < len/2; i++)
-    {
-        printf("pos is %d now \n",i);
-        temp = str[i];
-        printf("temp is now %c \n",temp);
-        str[i] = str[len - i - 1];
-        str[len - i - 1] = temp;
-        printf("str is now %s \n",str);
-    }
+   int l = strlen(str);l--;
+   for (int i = 0 ; i < (l+1)/2 ; i++){
+     permute(&str[i], &str[l-i]);
+     //str[i] = str[l-i] + str[i] - (str[l-i] =  str[i]);
+     //printf("i=%d, l-i-1==%d => str=%s\n",i, l-i-1,str);
+   }
 
 }
 int main() {
