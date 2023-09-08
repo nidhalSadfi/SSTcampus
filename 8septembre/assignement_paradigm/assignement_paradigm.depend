@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1694163381 source:c:\users\sst_campus\desktop\daily_projcets\sstcampus\8septembre\assignement_paradigm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
