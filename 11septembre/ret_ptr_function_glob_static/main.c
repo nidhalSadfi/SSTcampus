@@ -10,8 +10,18 @@ char *weatherforecast_global (int day) {
 }
 char *weatherforecast_static (int day)
 {
-    static char expectation[32];
+    static char expectation[32];//array of char => RW Memory$$$
     strcpy(expectation,"this day will be rainy...\n");
+    //printf ("to return :%s",expectation);
+    return expectation;
+}
+
+char *weatherforecast_romemory (int day) {
+    char *expectation = "This day won't be rainy...\n"; //RO memory
+    printf("addres of the constant strint .text=0x%x\n",
+                              "This day won't be rainy...\n");
+    printf("read from  <%c> first char .text=0x%x\n",
+                              "This day won't be rainy...\n"[0]);
     //printf ("to return :%s",expectation);
     return expectation;
 }
@@ -49,6 +59,12 @@ int *valboursiere_heap (char *site)
 
 int main(int argc, char * argv[]) {
     int d = 15;
+    char *s0 =weatherforecast_romemory(d);
+    printf("1. annouce : %s[0x%x]\n",s0,s0) ;
+    //s0[0]="W"; //RO MEMORY !!!!!!
+    printf("2. annouce : %s[0x%x]\n",s0,s0) ;
+
+    d = 15;
     char *s =weatherforecast_static(d);
     printf("annouce : %s[0x%x]\n",s,s) ;
 
