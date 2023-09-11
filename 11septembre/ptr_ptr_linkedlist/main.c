@@ -29,6 +29,13 @@ void insertAtTheEnd(struct lnode **pLast,const int lval){
     (*pLast)->next = lNewNode;
     *pLast = lNewNode;
 }
+void insertAtTheHead(struct lnode **pHead,const int lval){
+    struct lnode* lNewNode = malloc(sizeof(struct lnode));
+    lNewNode->value = lval;
+    lNewNode->id = (*pHead)->id - 1;
+    lNewNode->next = *pHead;
+    *pHead = lNewNode;
+}
 
 int main() {
     printf("Hello world!\n");
@@ -61,12 +68,8 @@ int main() {
         scanf("%d", &lval);
         if (lval == 0)
             break;
-        struct lnode* lNewNode = malloc(sizeof(struct lnode));
-        lNewNode->value = lval;
-        lNewNode->id = pHead->id - 1;
-        lNewNode->next = pHead;
-
-        pHead = lNewNode; // Mettre Ã  jour la tÃªte de la liste
+        insertAtTheHead(&pHead,lval);
+          // Mettre Ã  jour la tÃªte de la liste
     } while (1);
     lhead = pHead;
     char rep;
