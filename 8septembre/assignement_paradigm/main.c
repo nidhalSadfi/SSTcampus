@@ -16,7 +16,6 @@ void permute(int *x, int *y){
 int mysrtln(char c[]){
 
 
-    return x;
 }
 void myreverse(char str[]){
     int i, len, temp;

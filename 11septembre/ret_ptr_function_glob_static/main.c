@@ -1,12 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+static char expectation[32];
+static int val;
+char *weatherforecast_global (int day) {
+    strcpy(expectation,"this day will be rainy...\n");
+    //printf ("to return :%s",expectation);
+    return expectation;
+}
 char *weatherforecast_static (int day)
 {
     static char expectation[32];
     strcpy(expectation,"this day will be rainy...\n");
     //printf ("to return :%s",expectation);
     return expectation;
+}
+int *valboursiere_global (char *site)
+{
+    val *= 10;
+    printf ("to return :%d\n",val);
+    return &val;
 }
 int *valboursiere_static (char *site)
 {
@@ -15,6 +28,7 @@ int *valboursiere_static (char *site)
     printf ("to return :%d\n",val);
     return &val;
 }
+
 
 char *weatherforecast_heap (int day)
 {
@@ -33,7 +47,7 @@ int *valboursiere_heap (char *site)
 }
 
 
-int main() {
+int main(int argc, char * argv[]) {
     int d = 15;
     char *s =weatherforecast_static(d);
     printf("annouce : %s[0x%x]\n",s,s) ;
