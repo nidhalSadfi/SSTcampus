@@ -36,7 +36,6 @@ void getMenu(char *menu){
    }
 }
 int main() {
-   int number1 = 5, number2 = 6;
    int nb1,nb2;
    int op;
    printf ("give numbers n1 n2 =>");

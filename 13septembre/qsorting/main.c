@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#undef _UT
+//#undef _UT
 int gAsc= 1;
 void display(int pTab[], int szTab){
    for (int i = 0; i < szTab ; i++)
