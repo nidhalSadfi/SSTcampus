@@ -3,7 +3,7 @@
 
 void display(int pTab[], int szTab){
    for (int i = 0; i < szTab ; i++)
-     printf("%d-",pTab [i]);
+     printf("%d-",pTab [i]);  
    printf("\n");
 }
 
