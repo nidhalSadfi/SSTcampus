@@ -70,7 +70,7 @@ void  main() {
         scanf("%d",&act);
         if (act == 0)
             break;
-        //IoC
+        //Ioc
         tabActions[act-1];
     }while(1);
  }
