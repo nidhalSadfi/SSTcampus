@@ -21,7 +21,7 @@ typedef struct {
 int main() {
     printf("sizeof(otions)=%d\n",sizeof(toptions));
     unsigned char _opt = COMPTANT | CHEQUE |CREDIT;
-    printf("_opt = %d\n",_opt);
+        printf("_opt = %d\n",_opt);
     printf("1. %s comptant on stOpt\n",_opt&COMPTANT?"Par":"Sans");
     printf("1. %s crédit on stOpt\n",_opt&CREDIT?"Par":"Sans");
     printf("=========================================\n");

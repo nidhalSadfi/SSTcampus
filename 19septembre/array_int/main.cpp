@@ -25,10 +25,10 @@ int main()
     cout << iPtr + 1 << endl;    // 0x22cd34 (increase by 4 - sizeof int)
     cout << *iPtr << endl;       // 11
     //cout << "0. " << *(iPtr + 1)++ << endl; // Expression lvalue!
-    cout << "0. " << (*(iPtr + 1))++ << endl; // 22
-    cout << "1. " << (*(iPtr++))++ << endl; // 22
+    cout << "0. " << (*(iPtr + 1))++ << endl; //22
+    cout << "1. " << (*(iPtr++))++ << endl; // 11
     cout << "1. " << *iPtr << endl; // 23
-    cout << "2. " << *iPtr + 1 << endl;   // 24
+    cout << "2. " << *iPtr + 1 << endl;   //24 
     cout << "3. "<< *iPtr << endl;       // 23
     iPtr+=1; // iPtr+1 est une instruction muette !!!!!!!
     
