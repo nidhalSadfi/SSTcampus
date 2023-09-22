@@ -3,7 +3,7 @@
 
 typedef unsigned int UINT;
 
-// Structure pour un nÅ“ud de la liste chaÃ®nÃ©e
+// Structure pour un nÅ“ud de la liste chaÃ®nÃ©ee
 struct lnode {
     char id;
     int value;
