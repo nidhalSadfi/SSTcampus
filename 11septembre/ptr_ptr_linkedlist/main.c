@@ -11,7 +11,7 @@ struct lnode {
 };
 
 void  display(const struct lNode *pHead){
-   printf("1. Affichage de la liste :\n");
+   printf("1. Affichage de la liste :\n\n");
     struct lnode* pWalker = pHead;
 
     while (pWalker != NULL) {
