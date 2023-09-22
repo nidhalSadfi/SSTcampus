@@ -3,7 +3,7 @@
 
 int main()
 {
-    printf("Hello conversion world!\n");
+    printf("Hello conversion worlds!\n");
 
     int x = 1;
     int y = 2;
@@ -25,7 +25,7 @@ int main()
     printf("5. f = %.3f (=> division entière)\n",f);
 
     f = (float)(1.f / 2);
-    printf("6. f = %.3f (=> division flottante� \n",f);
+    printf("6. f = %.3f (=> division flottante� \n",f);
 
     f = (float)(1.f - x/y);
     printf("7. f = %.3f (=> division entière)\n",f);

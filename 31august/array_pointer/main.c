@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//créatiuon d'un nouveau type mytTab
+//créatiuon d'un nouveau type mytTab t
 typedef short mytTab;
 typedef unsigned int UINT;
 
