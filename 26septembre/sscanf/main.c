@@ -14,9 +14,19 @@ int main () {
   printf("the date is %d-%d-%d\n",d,m,y);
 
   printf("introduce your name surname country =>");
-  char sidentity[3][26];
-  scanf("%s %s %s",);
+  char sidentity[3][26];//allocation satique
+  char *pidentity[3];
   
+  for (int i = 0; i < 3 ; i++)
+     pidentity[i] = malloc(26);
+  scanf("%s %s %s",sidentity[0],sidentity[1],sidentity[2]);
+  printf("identity=> %s %s, your country is%s\n",sidentity[0],sidentity[1],sidentity[2]);
+
+  scanf("%s %s %s",pidentity[0],pidentity[1],pidentity[2]);
+  printf("identity=> %s %s, your country is%s\n",pidentity[0],pidentity[1],pidentity[2]);
+
+  for (int i = 0; i < 3 ; i++)
+     free(pidentity[i]);
 
   char sentence []="Anis is 12 years old";
   char str [20],str2[20];
