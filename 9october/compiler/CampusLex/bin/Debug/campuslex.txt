@@ -1,0 +1,18 @@
+Campus 2004/2005 - SST 
+ Résultat de l'Analyse Lexical sur le source:../../campuslex.txt
+-----------------------------------------------------------------
+
+Pas d'erreurs...
+0000: <CAMPUS | Identificateur> - L1 C2
+0001: <2004 | Entier> - L1 C9
+0002: <- | Erreur Lexical> - L1 C14
+0003: <2005 | Entier> - L1 C16
+0004: <SST | Identificateur> - L2 C1
+0005: <mégrine | Chaine> - L2 C6
+0006: <1999 | Entier> - L3 C1
+0007: <20.314 | Décimal> - L3 C6
+0008: <CAMPUS | Identificateur> - L3 C13
+0009: <Megrine Ben Arous | Chaine> - L4 C2
+0010: <Tunisie | Chaine Erronée> - L5 C2
+0011: <Fin | Identificateur> - L12 C1
+0012: <Programme | Identificateur> - L12 C5

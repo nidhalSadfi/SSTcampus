@@ -1,0 +1,46 @@
+ESTI 2004/2005 - IA3 
+ Résultat de l'Analyse Lexical sur le source:proglex.txt
+-----------------------------------------------------------------
+
+Pas d'erreurs...
+0000: <CAMPUS | Identificateur> - L2 C1
+0001: <2004 | Entier> - L2 C8
+0002: <- | Erreur Lexical> - L2 C13
+0003: <2005 | Entier> - L2 C15
+0004: <Le | Identificateur> - L4 C1
+0005: <but | Identificateur> - L4 C4
+0006: <de | Identificateur> - L4 C8
+0007: <ce | Identificateur> - L4 C11
+0008: <Workshop | Identificateur> - L4 C14
+0009: <est | Identificateur> - L4 C23
+0010: <de | Identificateur> - L4 C27
+0011: <reconnaitre | Identificateur> - L4 C30
+0012: <les | Identificateur> - L4 C42
+0013: <symboles | Identificateur> - L4 C46
+0014: <suivants | Identificateur> - L4 C55
+0015: <: | Erreur Lexical> - L4 C64
+0016: <entier | Identificateur> - L5 C2
+0017: <décimal | Erreur Lexical> - L6 C2
+0018: <identificateur | Identificateur> - L7 C2
+0019: <chaine | Identificateur> - L8 C2
+0020: <12éert | Erreur Lexical> - L10 C1
+0021: <123 | Entier> - L12 C2
+0022: <123456 | Entier> - L13 C2
+0023: <789 | Entier> - L13 C9
+0024: <1.2 | Décimal> - L14 C2
+0025: <1254.366 | Décimal> - L14 C6
+0026: <abcd | Identificateur> - L15 C2
+0027: <efgh1 | Identificateur> - L16 C2
+0028: <ijklm2 | Identificateur> - L16 C8
+0029: <une chaine | Chaine> - L17 C3
+0030: <voici une autre: chaine | Chaine> - L17 C16
+0031: <12k | Identificateur Erroné> - L19 C2
+0032: <1455lmmm | Identificateur Erroné> - L20 C2
+0033: <9.56pp123.jj | Décimal Erroné> - L21 C2
+0034: <12. | Décimal Erroné> - L22 C2
+0035: <15.p | Décimal Erroné> - L22 C6
+0036: <1abcdef | Identificateur Erroné> - L23 C2
+0037: <a.bcd | Identificateur Erroné> - L23 C10
+0038: <type symbole  | Chaine Erronée> - L24 C3
+0039: <chaine | Identificateur> - L25 C2
+0040: < | Chaine> - L25 C9

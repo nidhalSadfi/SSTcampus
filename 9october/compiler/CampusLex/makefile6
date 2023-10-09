@@ -1,0 +1,46 @@
+CC=gcc -c
+LD=gcc
+AR=ar -r
+RM=rm -f
+#TARGET=Release
+TARGET=Debug
+ifeq ($(TARGET),Debug)
+	DBGFLAGS=-g
+endif
+CFLAGS=-I.
+LDFLAGS=
+SRC= $(wildcard *.c)
+OBJ= obj/$(TARGET)/$(SRC:.c=.o)
+BIN=bin/$(TARGET)
+NAME=CrossAutomate
+
+default:dynamic
+
+static:$(BIN)/$(NAME).a 
+	@echo "built" $(NAME) $@  "in" $(TARGET) "mode !"
+
+dynamic:$(BIN)/lib$(NAME).so 
+	@echo "built" $(NAME) $@  "in" $(TARGET) "mode !"
+
+$(BIN)/lib$(NAME).so: $(OBJ)
+	@echo "linking dynmaic library..."
+	@(mkdir -p bin && mkdir -p $(BIN)) 
+	$(LD) -shared -o $@ $^ $(LDFLAGS)
+
+$(BIN)/$(NAME).a:$(OBJ)
+	@echo "archiving static library..."
+	@$(AR) $@ $^
+
+$(OBJ):$(SRC) 
+	@echo "compiling" $^ "file..."
+	@(mkdir -p obj && mkdir -p obj/$(TARGET)) 
+	$(CC) -o $@ $^ $(CFLAGS) $(DBGFLAGS)
+
+$(SRC)/main.c:$(SRC)/inc/automate.h
+	@(touch $@)
+
+clean:
+	$(RM) $(OBJ) $(BIN)/*
+cleanup:
+	@$(RM) -r obj bin
+	@echo "cleanup done !"

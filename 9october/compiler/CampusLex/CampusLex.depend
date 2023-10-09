@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1552990897 source:c:\sst\sstcampus\training\4. automate framework\projects\campuslex\lexparser.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"lexparser.h"
+
+1538037030 c:\sst\sstcampus\training\4. automate framework\projects\campuslex\lexparser.h
+	"lexparserExt.h"
+	<string.h>
+
+1538036784 c:\sst\sstcampus\training\4. automate framework\projects\campuslex\lexparserext.h
+	<inc/automate.h>
+
+1537868876 c:\sst\sstcampus\training\4. automate framework\projects\automate\inc\automate.h
+	<windows.h>
+
+1537869982 source:c:\sst\sstcampus\training\4. automate framework\projects\campuslex\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lexparser.h"
+
+1552990897 source:c:\sst\sstcampus\training\4. automate framework\alternance\alt23\campuslex\lexparser.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"lexparser.h"
+
+1538037030 c:\sst\sstcampus\training\4. automate framework\alternance\alt23\campuslex\lexparser.h
+	"lexparserExt.h"
+	<string.h>
+
+1696323901 c:\sst\sstcampus\training\4. automate framework\alternance\alt23\campuslex\lexparserext.h
+	<inc/automate.h>
+
+1660560811 c:\sst\sstcampus\training\4. automate framework\alternance\alt23\automate\inc\automate.h
+
+1696323540 source:c:\sst\sstcampus\training\4. automate framework\alternance\alt23\campuslex\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lexparser.h"
+

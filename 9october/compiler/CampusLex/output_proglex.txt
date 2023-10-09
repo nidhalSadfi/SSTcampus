@@ -1,0 +1,49 @@
+Campus 2004/2005 - SST 
+ Résultat de l'Analyse Lexical sur le source:proglex.txt
+-----------------------------------------------------------------
+
+Pas d'erreurs...
+0000: <CAMPUS | Identificateur> - L2 C1
+0001: <2004 | Entier> - L2 C8
+0002: <- | Erreur Lexical> - L2 C13
+0003: <2005 | Entier> - L2 C15
+0004: <SST | Identificateur> - L3 C1
+0005: <mégrine | Chaine> - L3 C6
+0006: <a bad string | Chaine Erronée> - L4 C2
+0007: <Le | Identificateur> - L6 C1
+0008: <but | Identificateur> - L6 C4
+0009: <de | Identificateur> - L6 C8
+0010: <ce | Identificateur> - L6 C11
+0011: <Workshop | Identificateur> - L6 C14
+0012: <est | Identificateur> - L6 C23
+0013: <de | Identificateur> - L6 C27
+0014: <reconnaitre | Identificateur> - L6 C30
+0015: <les | Identificateur> - L6 C42
+0016: <symboles | Identificateur> - L6 C46
+0017: <suivants | Identificateur> - L6 C55
+0018: <: | Erreur Lexical> - L6 C64
+0019: <entier | Identificateur> - L7 C2
+0020: <décimal | Erreur Lexical> - L8 C2
+0021: <identificateur | Identificateur> - L9 C2
+0022: <chaine | Identificateur> - L10 C2
+0023: <12éert | Erreur Lexical> - L12 C1
+0024: <123 | Entier> - L14 C2
+0025: <123456 | Entier> - L15 C2
+0026: <789 | Entier> - L15 C9
+0027: <1.2 | Décimal> - L16 C2
+0028: <1254.366 | Décimal> - L16 C6
+0029: <abcd | Identificateur> - L17 C2
+0030: <efgh1 | Identificateur> - L18 C2
+0031: <ijklm2 | Identificateur> - L18 C8
+0032: <une chaine | Chaine> - L19 C3
+0033: <voici une autre: chaine | Chaine> - L19 C16
+0034: <12k | Identificateur Erroné> - L21 C2
+0035: <1455lmmm | Identificateur Erroné> - L22 C2
+0036: <9.56pp123.jj | Décimal Erroné> - L23 C2
+0037: <12. | Décimal Erroné> - L24 C2
+0038: <15.p | Décimal Erroné> - L24 C6
+0039: <1abcdef | Identificateur Erroné> - L25 C2
+0040: <a.bcd | Identificateur Erroné> - L25 C10
+0041: <type symbole | Chaine Erronée> - L26 C3
+0042: <chaine | Identificateur> - L27 C2
+0043: < | Chaine> - L27 C9

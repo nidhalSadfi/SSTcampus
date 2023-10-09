@@ -1,0 +1,28 @@
+
+CAMPUS 2004 - 2005
+SST "mégrine"
+"a bad string
+
+Le but de ce Workshop est de reconnaitre les symboles suivants :
+ entier
+ décimal
+ identificateur
+ chaine
+
+12éert
+
+ 123
+ 123456 789
+ 1.2 1254.366
+ abcd
+ efgh1 ijklm2
+ "une chaine" "voici une autre: chaine"
+
+ 12k
+ 1455lmmm
+ 9.56pp123.jj
+ 12. 15.p
+ 1abcdef a.bcd
+ "type symbole
+ chaine""
+

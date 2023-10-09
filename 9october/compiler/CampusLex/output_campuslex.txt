@@ -1,0 +1,11 @@
+Campus 2004/2005 - SST 
+ Résultat de l'Analyse Lexical sur le source:campuslex.txt
+-----------------------------------------------------------------
+
+Pas d'erreurs...
+0000: <CAMPUS | Identificateur> - L1 C2
+0001: <2004 | Entier> - L1 C9
+0002: <- | Erreur Lexical> - L1 C14
+0003: <2005 | Entier> - L1 C16
+0004: <SST | Identificateur> - L2 C1
+0005: <mégrine | Chaine> - L2 C6
