@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chinigami_kun/last/compiler/automate/inc/automate.h
+
+/home/chinigami_kun/last/compiler/automate/main.c
+stdio.h
+/home/chinigami_kun/last/compiler/automate/stdio.h
+inc/automate.h
+/home/chinigami_kun/last/compiler/automate/inc/automate.h
+

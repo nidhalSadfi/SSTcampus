@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../automate/inc/automate.h
+
+/home/chinigami_kun/last/compiler/CampusLex/lexparser.c
+stdio.h
+-
+stdlib.h
+-
+windows.h
+-
+lexparser.h
+/home/chinigami_kun/last/compiler/CampusLex/lexparser.h
+
+/home/chinigami_kun/last/compiler/CampusLex/lexparser.h
+lexparserExt.h
+/home/chinigami_kun/last/compiler/CampusLex/lexparserExt.h
+string.h
+-
+
+/home/chinigami_kun/last/compiler/CampusLex/lexparserExt.h
+inc/automate.h
+-
+
+/home/chinigami_kun/last/compiler/CampusLex/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+lexparser.h
+/home/chinigami_kun/last/compiler/CampusLex/lexparser.h
+

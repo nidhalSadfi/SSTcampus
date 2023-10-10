@@ -1,0 +1,8 @@
+/home/chinigami_kun/last/compiler/Debug/CMakeFiles/rebuild_cache.dir
+/home/chinigami_kun/last/compiler/Debug/CMakeFiles/edit_cache.dir
+/home/chinigami_kun/last/compiler/Debug/automate/CMakeFiles/rebuild_cache.dir
+/home/chinigami_kun/last/compiler/Debug/automate/CMakeFiles/edit_cache.dir
+/home/chinigami_kun/last/compiler/Debug/automate/CMakeFiles/automate.dir
+/home/chinigami_kun/last/compiler/Debug/CampusLex/CMakeFiles/rebuild_cache.dir
+/home/chinigami_kun/last/compiler/Debug/CampusLex/CMakeFiles/edit_cache.dir
+/home/chinigami_kun/last/compiler/Debug/CampusLex/CMakeFiles/CampusLex.dir

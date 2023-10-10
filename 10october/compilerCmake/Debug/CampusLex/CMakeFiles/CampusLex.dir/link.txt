@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/CampusLex.dir/lexparser.c.o CMakeFiles/CampusLex.dir/main.c.o -o CampusLex   -L/home/chinigami.kun/deploy  -Wl,-rpath,/home/chinigami.kun/deploy:/home/chinigami_kun/last/compiler/Debug/automate ../automate/libautomate.so.1 
